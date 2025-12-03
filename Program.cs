@@ -1,37 +1,48 @@
-﻿using System;
-class primeNUmber
+﻿// // //Accessing the inputs from the user 
+// // Console.Write("Enter Your First Number:");
+// // int number = Convert.ToInt32(Console.ReadLine());
+// // Console.Write("Enter Your Second Number:");
+// // int number1 = Convert.ToInt32(Console.ReadLine());
+
+// // //Arithematic Operations 
+// // Console.WriteLine( number+number1);
+// // Console.WriteLine( number-number1);
+// // Console.WriteLine( number*number1);
+// // Console.WriteLine(number/number1);
+
+
+// Console.Write("Enter Your State : ");
+// string State = Console.ReadLine();
+
+// if(State == "Kerala")
+// {
+//     Console.WriteLine("You can speak Malayalam");
+// }   
+// else if(State == "Tamilnadu")
+// {
+//     Console.WriteLine("You can speak Tamil");
+// }
+// else if(State == "Karnataka")
+// {
+//     Console.WriteLine("You can speak Kannada");
+// }
+// else
+// {
+//     Console.WriteLine("You can speak English");
+// }
+
+
+// string[] day = { "day1", "day2", "day3"};
+// for(int i=0;i<=day.Length;i++)
+// {
+//     Console.WriteLine(day[i]);
+// }
+
+int[] number= { 5,7,3,2,10};
+for(int i=0;i<=number.Length;i++)
 {
-    static void Main()
+    if(number[i]>=10)
     {
-        Console.Write("Enter Your Number:");
-        int num = int.Parse(Console.ReadLine());
-
-        bool isPrime = true;
-
-        if(num <= 1)
-        {
-            isPrime= false;
-        }
-
-        else
-        {
-            for(int i=2; i<=num/2; i++)
-            {
-                if(num % i == 0)
-                {
-                    isPrime= false;
-                    break;
-                }
-            }
-        }
-        if (isPrime)
-        {
-            Console.WriteLine($"{num} is a prime number");
-        }
-        else
-        {
-             Console.WriteLine($"{num} is not a prime number");
-
-        }
+     Console.WriteLine(number[i]);
     }
 }
